@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reproductor - SleepWave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Reproductor</h2>
+        <audio id="audioPlayer" controls>
+            <source src="" type="audio/mpeg">
+        </audio>
+    </div>
+    <script>
+        // Obtener el parámetro 'sound' de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const soundFile = urlParams.get('sound');
+
+        // Asignar el archivo de audio
+        const audioPlayer = document.getElementById('audioPlayer');
+        audioPlayer.src = `sounds/${soundFile}`;
+        audioPlayer.load();
+    </script>
+</body>
+</html>

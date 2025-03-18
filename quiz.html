@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cuestionario - SleepWave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cuestionario</h2>
+        <form id="quizForm">
+            <div class="question">
+                <p>¿Cómo te sientes hoy?</p>
+                <select name="mood" required>
+                    <option value="">Selecciona...</option>
+                    <option value="Feliz">Feliz</option>
+                    <option value="Estresado">Estresado</option>
+                    <option value="Ansioso">Ansioso</option>
+                    <option value="Triste">Triste</option>
+                    <option value="Relajado">Relajado</option>
+                </select>
+            </div>
+            <div class="question">
+                <p>¿Qué necesitas?</p>
+                <select name="need" required>
+                    <option value="">Selecciona...</option>
+                    <option value="Energía">Energía</option>
+                    <option value="Relajación">Relajación</option>
+                    <option value="Enfoque">Enfoque</option>
+                    <option value="Sueño">Sueño</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
